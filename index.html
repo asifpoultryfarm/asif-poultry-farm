@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Asif Poultry Farm</title>
+
+<meta name="description" content="Fresh Desi Eggs, Farm Eggs, Healthy Chickens and Poultry Products">
+
+<link rel="icon" href="favicon.png">
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header class="header">
+
+<img src="logo.png" class="logo" alt="Asif Poultry Farm Logo">
+
+</header>
+
+<!-- NAVBAR -->
+<div class="menu-toggle" onclick="toggleMenu()">
+    ☰
+</div>
+
+<nav class="navbar" id="navbar">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#products">Products</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- HERO -->
+
+<section id="home">
+
+<div class="hero-top">
+
+<h1>Asif Poultry Farm</h1>
+
+<p>Fresh Eggs • Healthy Chickens • Quality Poultry Products</p>
+
+<div class="hero-buttons">
+
+<a href="https://wa.me/923062612257" class="whatsapp-btn">
+<i class="fab fa-whatsapp"></i>
+WhatsApp Order
+</a>
+
+<a href="#contact" class="order-btn">
+Order Now
+</a>
+
+</div>
+
+<div class="slider">
+
+<img src="hero1.jpg" class="slide active">
+<img src="hero2.jpg" class="slide">
+<img src="hero3.jpg" class="slide">
+<img src="hero4.jpg" class="slide">
+<img src="hero5.jpg" class="slide">
+<img src="hero6.jpg" class="slide">
+
+</div>
+
+</section>
+
+<!-- FEATURES SECTION -->
+
+<section class="features">
+
+<h2>Why Choose Us?</h2>
+
+<div class="features-grid">
+
+<div class="feature-card">
+
+<i class="fas fa-egg"></i>
+
+<h3>Fresh Eggs</h3>
+
+<p>Daily Fresh Desi & Farm Eggs.</p>
+
+</div>
+
+<div class="feature-card">
+
+<i class="fas fa-dove"></i>
+
+<h3>Healthy Chickens</h3>
+
+<p>Healthy and Hygienic Poultry.</p>
+
+</div>
+
+<div class="feature-card">
+
+<i class="fas fa-truck"></i>
+
+<h3>Fast Delivery</h3>
+
+<p>Retail & Wholesale Delivery.</p>
+
+</div>
+
+<div class="feature-card">
+
+<i class="fas fa-award"></i>
+
+<h3>Quality</h3>
+
+<p>Premium Quality Guaranteed.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ABOUT SECTION --><section id="about" class="about">
+
+<div class="container">
+
+<h2>About Us</h2>
+
+<p>
+Welcome to <strong>Asif Poultry Farm</strong>.
+We provide Fresh Desi Eggs, Farm Eggs, Desi Chickens,
+Farm Chickens and other quality poultry products.
+Our mission is to provide healthy, hygienic and fresh
+products with customer satisfaction.
+</p>
+
+</div>
+
+</section>
+
+<!-- PRODUCTS -->
+
+<section id="products" class="products">
+
+<h2>Our Products</h2>
+
+<div class="products-grid">
+
+<div class="product-card">
+<img src="desi-eggs.jpg" alt="Desi Eggs">
+<h3>Desi Eggs</h3>
+<p>100% Fresh Organic Desi Eggs</p>
+<a href="https://wa.me/923062612257" class="btn">Order Now</a>
+</div>
+
+<div class="product-card">
+<img src="farm-eggs.jpg" alt="Farm Eggs">
+<h3>Farm Eggs</h3>
+<p>Premium Quality Farm Eggs</p>
+<a href="https://wa.me/923062612257" class="btn">Order Now</a>
+</div>
+
+<div class="product-card">
+<img src="desi-chicken.jpg" alt="Desi Chicken">
+<h3>Desi Chicken</h3>
+<p>Healthy Desi Chicken</p>
+<a href="https://wa.me/923062612257" class="btn">Order Now</a>
+</div>
+
+<div class="product-card">
+<img src="farm-chicken.jpg" alt="Farm Chicken">
+<h3>Farm Chicken</h3>
+<p>Healthy Farm Chicken</p>
+<a href="https://wa.me/923062612257" class="btn">Order Now</a>
+</div>
+
+</div>
+
+</section>
+
+<!-- GALLERY -->
+
+<section id="gallery" class="gallery">
+
+<h2>Our Gallery</h2>
+
+<div class="gallery-grid">
+
+<img src="hero1.jpg" alt="" onclick="openImage(this.src)">
+<img src="hero2.jpg" alt="" onclick="openImage(this.src)">
+<img src="hero3.jpg" alt="" onclick="openImage(this.src)">
+<img src="hero4.jpg" alt="" onclick="openImage(this.src)">
+<img src="hero5.jpg" alt="" onclick="openImage(this.src)">
+<img src="hero6.jpg" alt="" onclick="openImage(this.src)">
+
+</div>
+
+<!-- Lightbox -->
+
+<div id="lightbox" class="lightbox" onclick="closeImage()">
+
+<img id="lightbox-img" src="" alt="">
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="contact">
+
+<h2>Contact Us</h2>
+
+<div class="contact-container">
+
+<div class="contact-info">
+
+<h3>Asif Poultry Farm</h3>
+
+<p>📍 Baba Farid Sugar Mill, Faisalabad Road, Okara</p>
+<p>📞 +92 306 2612257</p>
+<p>📧 asifpoultryfarm@gmail.com</p>
+
+</div>
+
+<form id="orderForm">
+
+<h2>Place Your Order</h2>
+
+<input type="text" id="name" placeholder="Your Name" required>
+
+<input type="tel" id="phone" placeholder="Mobile Number" required>
+
+<input type="text" id="address" placeholder="Delivery Address" required>
+<select id="product" required>
+
+<option value="">Select Product</option>
+
+<option>Desi Eggs</option>
+
+<option>Farm Eggs</option>
+
+<option>Desi Chicken</option>
+
+<option>Farm Chicken</option>
+
+<option>Broiler Chicken</option>
+
+<option>Baby Chicks</option>
+
+<option>Chicken Feed</option>
+
+<option>Poultry Medicine</option>
+
+<option>Bulk Wholesale Order</option>
+
+<option>All Poultry Farm Items Available</option>
+
+</select>
+
+<input type="number" id="quantity" placeholder="Quantity">
+
+<textarea id="message" placeholder="Order Details"></textarea>
+
+<button type="button" class="btn" onclick="sendWhatsApp()">
+Submit Order
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<!-- MAP -->
+
+<section class="map">
+
+<h2>Find Us</h2>
+
+<iframe
+src="https://www.google.com/maps?q=Baba+Farid+Sugar+Mill+Okara&output=embed"
+loading="lazy">
+</iframe>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<h2>Asif Poultry Farm</h2>
+
+<p>Fresh Eggs • Healthy Chickens • Quality Poultry Products</p>
+
+<p>© 2026 Asif Poultry Farm. All Rights Reserved.</p>
+
+</footer>
+
+<a href="https://wa.me/923062612257" class="whatsapp-float">
+<i class="fab fa-whatsapp"></i>
+</a>
+
+<a href="tel:+923062612257" class="call-float">
+<i class="fas fa-phone"></i>
+</a>
+
+
+<script>
+
+const slides = document.querySelectorAll(".slide");
+let current = 0;
+
+function showSlide(index){
+    slides.forEach(slide => slide.classList.remove("active"));
+    slides[index].classList.add("active");
+}
+
+setInterval(() => {
+    current++;
+    if(current >= slides.length){
+        current = 0;
+    }
+    showSlide(current);
+}, 3000);
+
+function sendWhatsApp(){
+
+    let name = document.getElementById("name").value;
+    let phone = document.getElementById("phone").value;
+    let address = document.getElementById("address").value;
+    let product = document.getElementById("product").value;
+    let quantity = document.getElementById("quantity").value;
+    let message = document.getElementById("message").value;
+
+    let text =
+    "New Order%0A"+
+    "Name: "+name+"%0A"+
+    "Phone: "+phone+"%0A"+
+    "Address: "+address+"%0A"+
+    "Product: "+product+"%0A"+
+    "Quantity: "+quantity+"%0A"+
+    "Message: "+message;
+
+    window.open(
+    "https://wa.me/923062612257?text="+text,
+    "_blank"
+    );
+
+}
+
+function toggleMenu(){
+    document.getElementById("navbar").classList.toggle("active");
+}
+function openImage(src){
+    document.getElementById("lightbox").style.display = "flex";
+    document.getElementById("lightbox-img").src = src;
+}
+
+function closeImage(){
+    document.getElementById("lightbox").style.display = "none";
+}
+
+</script>
+</body>
+</html>
